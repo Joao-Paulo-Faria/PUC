@@ -34,11 +34,15 @@
             <h1 class="titulo2">Seja um médico parceiro</h1>
         </section>
         <section class="secao4">
-            <input class="informa" type="text" placeholder="Nome">
-            <input class="informa" type="e-mail" placeholder="E-mail">
-            <input class="informa" type="text" placeholder="Celular">
-            <input class="informa" type="text" placeholder="Cidade">
-            <select class="informa" id="cbestado">
+            <input class="informa" type="text" id="txtn1" placeholder="Nome">
+
+            <input class="informa" type="text" id="txtn2" placeholder="E-mail">
+
+            <input class="informa" type="text" id="txtn3" placeholder="Celular-(DDxxxxxxxxx)">
+
+            <input class="informa" type="text"id="txtn4" placeholder="Cidade">
+
+            <select class="informa" id="cbestado" type="text">
                 <option value="">Estado</option>
                 <option value="AC">Acre</option>
                 <option value="AL">Alagoas</option>
@@ -64,24 +68,50 @@
                 <option value="SE">Sergipe</option>
                 <option value="TO">Tocantins</option>
             </select>
-            <input class="informa" type="text" placeholder="Endereço">
-            <select class="informa" id="cbespecialidade">
+            <input class="informa" type="text" id="txtn6" placeholder="Endereço">
+            
+            <select class="informa" id="cbespecialidade" type="text">
                 <option value="">Especialidade</option>
                 <option value="PD">Pediatria</option>
                 <option value="CA">Cardiologia</option>
                 <option value="GI">Ginecologia</option>
             </select>
-                <input class="informa" type="text" placeholder="CRM">
+                <input class="informa" type="text" id="txtn8" placeholder="CRM">
+             
         </section>
         <section class="botoes">
-            <button class="botao" type="submit">Salvar</button>
+            <input type="button" class="botao" value="Salvar" onclick="registro()">
             <button class="botao" type="button">Editar</button>
             <button class="botao" type="button">Redefinir Senha</button>  
         </section>
+            <div id="res">Resultado</div>
     </main>
     <footer>
         <p>Site criado pelo <a href=xxxxxxxx target="_blank">Grupo xxxx</a>  para <a href=xxxxxxxxx target="_blank"> PUC-MINAS</a></p>
     </footer>
+            <script>
+                function registro() {
+                    var tn1 = window.document.getElementById('txtn1')
+                    var tn2 = window.document.getElementById('txtn2')
+                    var tn3 = window.document.getElementById('txtn3')
+                    var tn4 = window.document.getElementById('txtn4')
+                    var tn5 = window.document.getElementById('cbestado')
+                    var tn6 = window.document.getElementById('txtn6')
+                    var tn7 = window.document.getElementById('cbespecialidade')
+                    var tn8 = window.document.getElementById('txtn8')
+                    var res =window.document.getElementById('res')
+                    var n1=String(tn1.value)
+                    var n2=String(tn2.value)
+                    var n3=String(tn3.value)
+                    var n4=String(tn4.value)
+                    var n5=String(tn5.value)
+                    var n6=String(tn6.value)
+                    var n7=String(tn7.value)
+                    var n8=String(tn8.value)
+                    res.innerHTML=` ${n1} + ${n2} + ${n3} + ${n4}+ ${n5}+${n6}+${n7}+${n8}`
+                    window.alert(` ${n1} + ${n2} + ${n3} + ${n4}+ ${n5}+${n6}+${n7}+${n8}`)
+                }
+            </script>
 </body>
 
 </html>
