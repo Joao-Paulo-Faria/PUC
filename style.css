@@ -26,7 +26,7 @@ main{
     max-width: 1000px;
     margin-top: 30px;
     padding-bottom: 40px;
-    background-color:white;
+    background-color:#ffffff;
     box-shadow: 0px 0px  10px black;
     border-radius:10px;
     padding: 30px;
@@ -34,14 +34,14 @@ main{
 
 }
 
-.titulo1 {
+.titulo1-cabecalho {
     font-size: 4.3vw;
     font-family:Georgia, 'Times New Roman', Times, serif;
     display: block;
    
 
 }
-.imagem1 {
+.imagem-cabecalho {
 
     height: 160px;
     width: 95%;
@@ -54,7 +54,7 @@ main{
     min-width: 483px;
     max-width: 1360px;
 }
-.menu-geral {
+.menu-cabecalho {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -82,7 +82,7 @@ background-color:white;
 height: 100%;
 
 }
-.titulo2 {
+.titulo-corpodapagina {
   
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 35px;
@@ -103,12 +103,12 @@ height: 100%;
 
 }
 
-.informa{
+.formulario{
     width: 500px;
     height: 30px; 
 }
 
-footer{
+.rodape{
 
 background-color:#20b2aa;
 color: white;
@@ -116,7 +116,7 @@ text-align: center;
   
    
 }
-footer>p>a {
+.rodape>p>a {
     color:white;
     font-weight: bolder;
     text-decoration: none;
@@ -124,7 +124,7 @@ footer>p>a {
 
 
 
-footer a:hover{
+.rodape a:hover{
     text-decoration: underline;
     color:black;
 

@@ -15,13 +15,13 @@
            
                 <picture>
                    <source media="(max-width:750px)" srcset="Capturar2.PNG">
-                    <img class="imagem1" src="Capturar.PNG" alt="My Doctor">
+                    <img class="imagem-cabecalho" src="Capturar.PNG" alt="My Doctor">
                 </picture>
-                <h1 class="titulo1">My Doctor</h1>
+                <h1 class="titulo1-cabecalho">My Doctor</h1>
             
         </section > 
         <section class="secao2">
-            <nav class="menu-geral">
+            <nav class="menu-cabecalho">
                 <a class="menu" href="http://">Quem somos</a>
                 <a class="menu" href="http://">Contatos</a>
                 <a class="menu" href="http://">Seja um médico parceiro</a>
@@ -31,18 +31,18 @@
     </header>
     <main>
         <section class="secao3">
-            <h1 class="titulo2">Seja um médico parceiro</h1>
+            <h1 class="titulo-corpodapagina">Seja um médico parceiro</h1>
         </section>
         <section class="secao4">
-            <input class="informa" type="text" id="txtn1" placeholder="Nome">
+            <input class="formulario" type="text" id="txtn1" placeholder="Nome">
            
-            <input class="informa" type="text" id="txtn2" placeholder="E-mail">
+            <input class="formulario" type="text" id="txtn2" placeholder="E-mail">
 
-            <input class="informa" type="text" id="txtn3" placeholder="Celular-(DDxxxxxxxxx)">
+            <input class="formulario" type="text" id="txtn3" placeholder="Celular-(DDxxxxxxxxx)">
 
-            <input class="informa" type="text"id="txtn4" placeholder="Cidade">
+            <input class="formulario" type="text"id="txtn4" placeholder="Cidade">
 
-            <select class="informa" id="cbestado" type="text">
+            <select class="formulario" id="cbestado" type="text">
                 <option value="">Estado</option>
                 <option value="AC">Acre</option>
                 <option value="AL">Alagoas</option>
@@ -68,15 +68,15 @@
                 <option value="SE">Sergipe</option>
                 <option value="TO">Tocantins</option>
             </select>
-            <input class="informa" type="text" id="txtn6" placeholder="Endereço">
+            <input class="formulario" type="text" id="txtn6" placeholder="Endereço">
             
-            <select class="informa" id="cbespecialidade" type="text">
+            <select class="formulario" id="cbespecialidade" type="text">
                 <option value="">Especialidade</option>
                 <option value="PD">Pediatria</option>
                 <option value="CA">Cardiologia</option>
                 <option value="GI">Ginecologia</option>
             </select>
-            <input class="informa" type="text" id="txtn8" placeholder="CRM">
+            <input class="formulario" type="text" id="txtn8" placeholder="CRM">
              
         </section>
         <section class="botoes">
@@ -86,7 +86,7 @@
         </section>
             <div id="res">Resultado</div>
     </main>
-    <footer>
+    <footer class="rodape">
         <p>Site criado pelo <a href=xxxxxxxx target="_blank">Grupo xxxx</a>  para <a href=xxxxxxxxx target="_blank"> PUC-MINAS</a></p>
     </footer>
             <script>
@@ -117,10 +117,11 @@
                         if(n1||n2||n3||n4||n5||n6||n7||n8 == null){
                         window.alert(`Verificar os campos, existe campo vazio`)
                         }else{
-                        window.alert(`Favor preencher os campus`)   
+                        window.alert(`Favor preencher os campus`)  
+                        
                         }
                     }      
-                }   
+                }  
             </script>        
 </body>
 </html>
